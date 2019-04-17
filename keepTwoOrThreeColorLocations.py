@@ -1,3 +1,11 @@
+#Orsi's first code written for this project. The value of it is that it is a good starting point for a code to process 
+#superresolution images both in terms of what needs to be imported and algorithmically. The script processes the original 
+#diffraction-limited images, without zooming in, implying that the barcodes appear as one or two colored pixels. 
+#Consequently, the code looks for neighboring pixels of the colors corresponding to the different imagers or for 
+#superimpositions of thereof. It keeps only occurrences containing two or three colors and the fourth channel in the 
+#experiment the resulting images of I wrote it for, the fourth channel looked very different from the first three 
+#(the images live cells got such a damage by then that they got detached from the surface). 
+
 #keep nonblack pixels which are:
 #(not (red or blue or yellow) OR have at least one nonblack neighbor which is not the same color, thinking of edges)
 
